@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Ricoy</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da Barbearia Ricoy"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nome">Digite seu nome completo:</label>
+				<input type="text" id="nome"name="" class="input-padrao" required>
+
+				<label for="email">Digite seu Email:</label>
+				<input type="email" id="email"name="" class="input-padrao" required placeholder="seuemail@daminio.com">
+
+				<label for="telefone">Digite seu Telefone:</label>
+				<input type="tel" id="telefone"name="" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+				
+				<label for="mensagem">Digite sua mensagem:</label>
+				<textarea cols="60" rows="5" id="mensagem" class="input-padrao" required></textarea>
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" value="radio-email" id="radio-email" name="contato"> Email</label>					
+
+					<label for="radio-telefone"><input type="radio" value="radio-telefone" id="radio-telefone" name="contato"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" value="radio-whatsapp" id="radio-whatsapp" name="contato" checked> WhatsApp</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Qual horario prefere ser atendido?</legend>
+						<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>	
+						</select>
+					</fieldset>	
+				<label><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por Email?</label>
+
+				<input type="submit" value="Enviar" class="enviar">
+			</form>
+			<table>
+				<thead>
+					<tr>
+					<td>Dia</td>
+					<td>Horario</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda a Sexta</td>
+						<td>08h as 20h</td>
+					</tr>
+					<tr>
+						<td>Sabados e feriados</td>
+						<td>08h as 17h</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da Barbearia Ricoy">
+			<p class="copyrigth">&#169; Copyrigth Barbearia Ricoy -2020</p>
+		</footer>
+	</body>
+</html>
